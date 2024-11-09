@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        body{
+            width: 100%;
+            text-align: center;   
+            overflow-x: hidden;
+        }
+        .inputs{
+            padding: 10px;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+        table{
+            margin: 0 auto;
+            width: 50%;
+        }
+        #coursecode{
+        text-transform: capitalize;
+        }
+        #creditload{
+        text-transform: capitalize;
+        }
+        #grade{
+        text-transform: capitalize;
+        }
+        p{
+            padding-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="inputs">
+        <input type="text" placeholder="course code" id="coursecode">
+        <input type="text" placeholder="credit load" id="creditload">
+        <input type="text" placeholder="grade" id="grade">
+        <!-- <input type ="text" placeholder="total" id="inputtotal">  -->
+        <button id="submit">Submit</button>
+    </div>
+    <h3>You can add more than one course on the display</h3>
+        <table border="1" id="table">
+        <thead>
+            <tr>
+                <th>course code</th>
+                <th>credit load</th>
+                <th>Grade</th>
+                <th>total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr id="tr">
+                <!-- <td id="td"></td> -->
+            </tr>
+        </tbody>
+    </table>
+    <p>web app still on development, but i would be grateful if you try it out</p>
+    <script src="script.js"></script>
+</body>
+</html>
